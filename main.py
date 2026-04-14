@@ -4,7 +4,7 @@ class App:
     def __init__(self):
         pyxel.init(50, 160)
 
-        self.ball_x = 80
+        self.ball_x = 25
         self.ball_y = 60
         self.vx = 0
         self.vy = 0
