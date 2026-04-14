@@ -2,7 +2,7 @@ import pyxel
 
 class App:
     def __init__(self):
-        pyxel.init(160, 120)
+        pyxel.init(120, 160)
 
         self.ball_x = 80
         self.ball_y = 60
