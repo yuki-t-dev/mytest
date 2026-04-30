@@ -198,13 +198,13 @@ class App:
                 self.player_y = ny
 
     def update(self):
-        if pyxel.btnp(pyxel.KEY_LEFT):
+        if pyxel.btn(pyxel.KEY_LEFT) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DPAD_LEFT):
             self.try_move(-1, 0)
-        elif pyxel.btnp(pyxel.KEY_RIGHT):
+        elif pyxel.btn(pyxel.KEY_RIGHT) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DPAD_RIGHT):
             self.try_move(1, 0)
-        elif pyxel.btnp(pyxel.KEY_UP):
+        elif pyxel.btn(pyxel.KEY_UP) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DPAD_UP):
             self.try_move(0, -1)
-        elif pyxel.btnp(pyxel.KEY_DOWN):
+        elif pyxel.btn(pyxel.KEY_DOWN) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DPAD_DOWN):
             self.try_move(0, 1)
 
         if (self.player_x, self.player_y) == (self.goal_x, self.goal_y):
